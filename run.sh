@@ -25,7 +25,7 @@ BOLD='\033[1m'
 GRAY='\033[38;5;245m'
 
 rand_color(){ echo -e "${COLORS[$RANDOM % ${#COLORS[@]}]}"; }
-pause(){ echo -e "${GRAY}"; read -p "Press Enter to continue..." x; echo -e "${NC}"; }
+pause(){ echo -e "${GRAY}"; read -p "Pressione ENTER para continuar..." x; echo -e "${NC}"; }
 
 # ===================== BANNER =====================
 banner(){
@@ -41,7 +41,7 @@ echo -e "${C2} ██   ████ ███████ ████�
 echo -e "${C2}                              ▀▀                        ${NC}"
 echo
 echo -e "${C3}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "                 ${BOLD}Criado por - Nesquik Developer (yAlvinZin)${NC}" ${C2}2026
+echo -e "${BOLD}Criado por - Nesquik Developer (yAlvinZin)${NC}" ${C2}2026
 echo -e "${C1}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo
 }
@@ -75,7 +75,7 @@ case $p in
  9) bash <(curl -s https://raw.githubusercontent.com/yourlink/cpanel.sh) ;;
  10) bash <(curl -s https://raw.githubusercontent.com/yourlink/t-panel.sh) ;;
  11) break;;
- *) echo -e "${RED}Invalid Option${NC}"; pause;;
+ *) echo -e "${RED}Opção inválida${NC}"; pause;;
 esac
 done
 }
@@ -104,7 +104,7 @@ case $t in
  6) bash <(curl -s https://raw.githubusercontent.com/yourlink/portforward.sh) ;;
  7) bash <(curl -s https://raw.githubusercontent.com/nisquik086-afk/QUIK/refs/heads/main/srv/tools/rdp.sh) ;;
  8) break;;
- *) echo -e "${RED}Invalid${NC}"; pause;;
+ *) echo -e "${RED}Inválido${NC}"; pause;;
 esac
 done
 }
@@ -153,8 +153,8 @@ case $c in
  5) theme_menu ;;
  6) bash <(curl -s https://raw.githubusercontent.com/nisquik086-afk/QUIK/refs/heads/main/srv/menu/System1.sh) ;;
  7) bash <(curl -s https://raw.githubusercontent.com/nisquik086-afk/QUIK/refs/heads/main/srv/External/INFRA.sh) ;;
- 8) echo -e "${GREEN}Exiting — CODING HUB by Nobita${NC}"; exit ;;
- *) echo -e "${RED}Invalid${NC}"; pause ;;
+ 8) echo -e "${GREEN}Saindo — Nesquik${NC}"; exit ;;
+ *) echo -e "${RED}Inválido${NC}"; pause ;;
 esac
 done
 }
